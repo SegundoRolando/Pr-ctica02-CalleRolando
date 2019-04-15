@@ -4,14 +4,9 @@
  * and open the template in the editor.
  */
 package ec.edu.ups.prueba;
-import ec.edu.ups.clases.Ave;
-import ec.edu.ups.clases.AveDomes2loro;
-import ec.edu.ups.clases.Avesilvestre;
-import ec.edu.ups.clases.AveSil1lechuza;
-import ec.edu.ups.clases.AveSil2buitre;
-import ec.edu.ups.clases.Avedomestica;
-import ec.edu.ups.interfaces.AveDomes1pato;
-        
+import ec.edu.ups.clases.*;
+import java.util.ArrayList;
+import java.util.List;
 /**
  *
  * @author ASUS
@@ -20,39 +15,33 @@ public class Prueba {
     
     
     public static void main(String[] args) {
+        List<Ave> lista=new ArrayList<>();
         
-        
-       Ave ave1=new Ave(3+"kg", "loro", "amarillo, rojo", "masculino", "5") ;
-       
-       Ave ave2=new Ave(2+"kg", "pato", "amarillo", "masculino", "8");
-       Ave ave3=new Ave(8+"kg", "buitre", "negro,blanco", "masculino", "2");
-       Ave ave4=new Ave(4+"kg", "luchuza", "cafe obscuro", "femenina", "3");
-     ave3.setGenero("masculino");
-     ave1.setColores("amarillo azul rojo");
-       ave4.equals(m2);
-     ave3.getGenero();
-   
-      Avesilvestre sil1=new Avesilvestre("cuevas de los andes ", "cuidad a animales para casar");
-      Avesilvestre sil2=new Avesilvestre("cordilleras los andes", "cidan su comida para casar");
-      
-     Avedomestica dome1=new  Avedomestica("criadero de pericos loros etc", "Xavier", "agrovet", "vitaminas");
-     Avedomestica dome2=new Avedomestica("criadero de patos", "pepito", "veterinario one", "desparasitantes");
      
-     AveDomes2loro n1= new AveDomes2loro(dome1);
-     AveDomes1pato n2= new AveDomes1pato(dome2);
-      dome1.getSeguridad();
-     dome2.comersemillas();
-             
-     AveSil1lechuza m1=new AveSil1lechuza("nocturna", "cuevas de cubrirse", "su forma de cabes es unica", "cuevas de la montañas", "se dedica a casar para alimentarse");
-     AveSil2buitre m2=new AveSil2buitre("carnivoro", "simbolo del escudo nacional", "escondite y cuevas", " son casadores");
-          sil2.getAves();
-     sil1.getCuevas();
-     ave4.equals(m2);
-     ave3.getGenero();
-   
-    
-    
-    
-    }
-    
+        Loro loro = new Loro("Lora habla", "alagos a loro", "aseo", "canta",
+                "hohgar", "Pepito", "Juanito", "vitaminas", 23, "2kg","cotorra", "verde roja", "embra");
+        System.out.println("informacion de loro :"+ loro);
+        
+        loro.comer();
+        loro.dormir();
+        loro.moverse();
+        loro.reproducirse();
+        
+        Pato pato= new Pato("ActividAD DEL PATO NADAR", "charcos de agua",
+                "criadero de paso", "Pepito", "Juanito", "vitaminas ,hierro", 4,
+                "3Kg","Patitofeo", "amarillo banco", "macho");
+        System.out.println("Informacion del PATO: "+ pato);
+        
+        
+
+       Lechuza lechuza=new Lechuza("Este animal es nocturno", "cordilleras", 
+               "su cara unicca Acorazonada", "cuevas en la selva", "casa ratones"
+               ,1, "1kg", "lechusita", "cafe obscuro", "embra");
+        System.out.println(" Informacion de la Lechuza :" +lechuza);
+        
+        Buitre buitre=new Buitre("es un animal sumamente carnivoro", "esta representado en el escudo naional del ecuador "
+                , "sus cuevas son en la cordillera de los andesconocido como condor", "casa animales de toda clase"
+                , 4, "3kg", "Condor", "blanco y negro", "masculino");
+        
+    }  
 }
