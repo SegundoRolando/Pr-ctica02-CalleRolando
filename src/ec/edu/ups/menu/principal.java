@@ -16,15 +16,16 @@ public class principal {
    
     public static void main(String[] args) {
 Scanner l = new Scanner(System.in);
- ControladorPato obj=new  ControladorPato();
+ControladorLoro controlador = new ControladorLoro();
+ 
     String z;
     do{
     int r, r2, r3, r4, r5, r6;
      System.out.println("Digite la opcion que desea realizar?");
-        System.out.println("1. CRUD Aire Acondicionado");
-        System.out.println("2. CRUD Regrigerador");
-        System.out.println("3. CRUD Computador");
-        System.out.println("4. CRUD Televisor");
+        System.out.println("1. CRUD Loro");
+        System.out.println("2. CRUD Pato");
+        System.out.println("3. CRUD Buitre");
+        System.out.println("4. CRUD Lechuza");
         System.out.println("5. Salir");
 
         System.out.println("Digite su opción?");
@@ -34,7 +35,7 @@ Scanner l = new Scanner(System.in);
      
             do{
                
-                        System.out.println("MENU AIRE ACONDICIONADO");
+                        System.out.println("Loro");
                         System.out.println("1. Create");
                         System.out.println("2. Read");
                         System.out.println("3. Update");
@@ -45,13 +46,25 @@ Scanner l = new Scanner(System.in);
                         
                         switch(r2){
                             case 1:
-       
+                               Loro loro=new Loro();
+                               String nombre=l.next();
+                               loro.setNombre(nombre);
+                               int codigo=l.nextInt();
+                               loro.setCodigo(codigo);
+                               String color=l.next();
+                               loro.setColores(color);
+                               String genero=l.next();
+                               loro.setGenero(genero);
+                               String peso=l.next();
+                               loro.setPeso(peso);
                                 //ceate
                                 //pide todos los datos por teclado
                                 //instancia un objeto
                                 //llama al metodo create del controlador
                                 break;
                             case 2:
+                                nombre=l.next();
+                                System.out.println(" "+);
                                 //read
                                 //pide el codigo por teclado
                                 //llama al metodo read del controlador
