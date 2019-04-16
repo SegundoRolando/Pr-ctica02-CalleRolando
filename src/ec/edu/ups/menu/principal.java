@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package ec.edu.ups.menu;
+import ec.edu.ups.Controlador.ControladorPato;
 import ec.edu.ups.clases.Loro;
+import ec.edu.ups.clases.Pato;
 import java.util.Scanner;
 /**
  *
@@ -14,12 +16,10 @@ public class principal {
    
     public static void main(String[] args) {
 Scanner l = new Scanner(System.in);
-
+ ControladorPato obj=new  ControladorPato();
     String z;
     do{
-    int r=0 , r2=0 ;
-    int r3=0, r5=0;
-    int r6;
+    int r, r2, r3, r4, r5, r6;
      System.out.println("Digite la opcion que desea realizar?");
         System.out.println("1. CRUD Aire Acondicionado");
         System.out.println("2. CRUD Regrigerador");
@@ -31,8 +31,9 @@ Scanner l = new Scanner(System.in);
         r=l.nextInt();
         switch (r){
         case 1:
-            Loro loro=new Loro();
+     
             do{
+               
                         System.out.println("MENU AIRE ACONDICIONADO");
                         System.out.println("1. Create");
                         System.out.println("2. Read");
@@ -44,8 +45,8 @@ Scanner l = new Scanner(System.in);
                         
                         switch(r2){
                             case 1:
-                                
-                                //create
+       
+                                //ceate
                                 //pide todos los datos por teclado
                                 //instancia un objeto
                                 //llama al metodo create del controlador

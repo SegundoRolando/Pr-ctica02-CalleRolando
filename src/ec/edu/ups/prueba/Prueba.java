@@ -26,22 +26,41 @@ public class Prueba {
         loro.dormir();
         loro.moverse();
         loro.reproducirse();
+        System.out.println("");
         
         Pato pato= new Pato("ActividAD DEL PATO NADAR", "charcos de agua",
-                "criadero de paso", "Pepito", "Juanito", "vitaminas ,hierro", 4,
+                "criadero de patos", "Pepito", "Juanito", "vitaminas ,hierro", 4,
                 "3Kg","Patitofeo", "amarillo banco", "macho");
         System.out.println("Informacion del PATO: "+ pato);
+        pato.comer();
+        pato.dormir();
+        pato.reproducirse();
+        pato.moverse();
+         
+        System.out.println("");
         
         
 
        Lechuza lechuza=new Lechuza("Este animal es nocturno", "cordilleras", 
-               "su cara unicca Acorazonada", "cuevas en la selva", "casa ratones"
+               "su cara unicca Acorazonada", "cueva  de selva", "casa ratones"
                ,1, "1kg", "lechusita", "cafe obscuro", "embra");
         System.out.println(" Informacion de la Lechuza :" +lechuza);
+        lechuza.comer();
+        lechuza.dormir();
+        lechuza.moverse();
+        lechuza.reproducirse();
+        System.out.println("");
         
-        Buitre buitre=new Buitre("es un animal sumamente carnivoro", "esta representado en el escudo naional del ecuador "
-                , "sus cuevas son en la cordillera de los andesconocido como condor", "casa animales de toda clase"
+        Buitre buitre=new Buitre("es un animal sumamente carnivoro", "esta representado en el escudo naional del Ecuador "
+                , "sus cuevas son en la cordillera de los andes", "casa animales de toda clase"
                 , 4, "3kg", "Condor", "blanco y negro", "masculino");
+        System.out.println("Informacion del buitre :" +buitre);
+        buitre.comer();
+        buitre.dormir();
+        buitre.moverse();
+        buitre.reproducirse();
+       
         
+        System.out.println("");
     }  
 }
